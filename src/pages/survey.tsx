@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Card, Steps, Typography } from 'antd';
 import Question from '../components/question';
+import Confetti from 'react-confetti'
 
 interface Question {
   question: string;
@@ -21,7 +22,6 @@ interface SurveyProps {
 const Survey: React.FC<SurveyProps> = ({data}) => {
   const [current, setCurrent] = useState(0);
   const [done, setDone] = useState(false);
-
   const next = () => {
     setCurrent(current + 1);
   };
@@ -41,6 +41,10 @@ const Survey: React.FC<SurveyProps> = ({data}) => {
           height: '90vh',
         }}
       >
+        <Confetti
+          width={window.screen.width}
+          height={window.screen.height*0.9}
+        />
         <Card style={{ 
           width: "100%", 
           height: "60vh",
