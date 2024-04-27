@@ -2,6 +2,8 @@ import React from 'react'
 import { ConfigProvider } from "antd";
 import './App.css'
 import Survey from './pages/survey'
+import Navbar from './components/navbar/navbar';
+import TitleText from './components/title-text/title-text';
 
 function App() {
   const data = [
@@ -77,6 +79,8 @@ function App() {
           }
         }}
       >
+        <Navbar/>
+        <TitleText title='Welcome to Our Survey: ' subtitle='Understanding Cultural Biases in Large Language Models'/>
         <Survey 
           data={data}
         />

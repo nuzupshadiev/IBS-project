@@ -1,0 +1,12 @@
+.title-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.title-text h1{
+  background: linear-gradient(#000000, #2d3aaa, #5465FF);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
