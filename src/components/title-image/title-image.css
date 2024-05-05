@@ -1,0 +1,24 @@
+.title-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 20px;
+}
+.title-image img{
+  width: 45vw;
+  height: auto;
+  border-radius: 10px;
+}
+.button-wrap{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.button-wrap button{
+  width: 180px;
+  height: 50px;
+}
